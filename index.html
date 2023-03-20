@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Image</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/4d58f3bc7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="items">
+                <span class="item active" data-name="all">All</span>
+                <span class="item" data-name="bag">Bag</span>
+                <span class="item" data-name="shoe">Shoe</span>
+                <span class="item" data-name="watch">Watch</span>
+                <span class="item" data-name="camera">Camera</span>
+                <span class="item" data-name="headphone">Headphone</span>
+            </div>
+        </nav>
+        <!-- Filter images -->
+        <div class="gallery">
+            <div class="image" data-name="camera"><span><img src="images/camera_1.jpg" alt="image"></span></div>
+            <div class="image" data-name="headphone"><span><img src="images/headphone_1.jpg" alt="image"></span></div>
+            <div class="image" data-name="camera"><span><img src="images/camera_2.jpg" alt="image"></span></div>
+            <div class="image" data-name="headphone"><span><img src="images/headphone_2.jpg" alt="image"></span></div>
+            <div class="image" data-name="bag"><span><img src="images/bag_1.jpg" alt="image"></span></div>
+            <div class="image" data-name="shoe"><span><img src="images/shoe_1.jpg" alt="image"></span></div>
+            <div class="image" data-name="watch"><span><img src="images/watch_1.jpg" alt="image"></span></div>
+            <div class="image" data-name="shoe"><span><img src="images/shoe_2.jpg" alt="image"></span></div>
+        </div>
+    </div>
+
+    <!-- Full screen Image preview -->
+    <div class="preview-box">
+        <div class="details">
+            <span class="title">Image Category: <p>Not defined</p></span>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="image-box">
+            <img src="images/shoe_2.jpg" alt="image preview">
+        </div>
+    </div>
+    <div class="shadow"></div>
+</body>
+</html>
